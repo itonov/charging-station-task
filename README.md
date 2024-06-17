@@ -9,7 +9,11 @@ This RESTful project is created as a personal training task. Main goal is for me
 * Run mvn dependency:resolve to install all dependencies
 * You need to have MySQL database installed locally or run it in Docker container (1st Usage step). You can adjust DB credentials in application.properties file
 ### Usage
-* Run "docker-compose up" to run MySQL DB as a Docker container (not needed if you already have MySQL running locally)
+#### Using docker
+* Run "docker-compose build" to build the application Jar
+* Run "docker-compose up" to run both MySQL DB and Charging station task API as a Docker containers 
+* Connect to the API using Postman on port 8080.
+#### Using Maven and Spring run (need MySQL installed and running locally)
 * Run "mvn spring-boot:run" to run the project
 * Connect to the API using Postman on port 8080.
 ### API Endpoints
@@ -24,4 +28,5 @@ This RESTful project is created as a personal training task. Main goal is for me
 * [Maven](https://maven.apache.org/) This is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
 * [Spring Boot](https://spring.io/projects/spring-boot) Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 * [MySQL](https://www.mysql.com/) MySQL is an Oracle-backed open source relational database management system (RDBMS) based on Structured Query Language (SQL).
+* [Docker](https://www.docker.com/) Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
 * [H2](https://h2database.com/html/main.html) H2 is a relational database management system written in Java. It can be embedded in Java applications or run in client-server mode.
