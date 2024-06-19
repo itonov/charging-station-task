@@ -10,7 +10,8 @@ This RESTful project is created as a personal training task. Main goal is for me
 * You need to have MySQL database installed locally or run it in Docker container (1st Usage step). You can adjust DB credentials in application.properties file
 ### Usage
 #### Using docker
-* Run "docker-compose build" to build the application Jar
+* Run "mvn install" to build the application Jar
+* Run "docker-compose build"
 * Run "docker-compose up" to run both MySQL DB and Charging station task API as a Docker containers 
 * Connect to the API using Postman on port 8080.
 #### Using Maven and Spring run (need MySQL installed and running locally)
